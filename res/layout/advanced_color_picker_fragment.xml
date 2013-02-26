@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <com.larswerkman.colorpicker.ColorPicker
+            android:id="@+id/color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <com.larswerkman.colorpicker.SVBar
+            android:id="@+id/svbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dip" />
+
+        <com.larswerkman.colorpicker.OpacityBar
+            android:id="@+id/opacitybar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="@string/label_selected_color"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <FrameLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textSize="42dp"
+                    tools:ignore="SpUsage,HardcodedText" />
+
+                <View
+                    android:id="@+id/color_square"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/transparent" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/select_color_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_select_color" />
+    </LinearLayout>
+
+</ScrollView>

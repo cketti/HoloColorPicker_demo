@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HoloColorPicker Demo</string>
+    <string name="action_about">About</string>
+
+    <string name="tab_simple">Simple</string>
+    <string name="tab_advanced">Advanced</string>
+    <string name="tab_customized">Customized</string>
+
+    <string name="label_change_color">Change color</string>
+    <string name="label_text_color">Text color</string>
+    <string name="label_selected_color">Currently selected color:</string>
+    <string name="label_select_color">Select color</string>
+    <string name="label_about">About</string>
+
+    <string name="about_text"><![CDATA[
+        <p>
+        <strong>HoloColorPicker</strong> was written by
+        <a href="https://plus.google.com/113646442457708412671/posts">Lars Werkman</a>
+        and designed by
+        <a href="https://plus.google.com/115374955104579332297/posts">Marie Schweiz</a>.
+        </p><p>
+        The source code was released under the Apache License, Version 2.0 and is available here:<br>
+        <a href="https://github.com/LarsWerkman/HoloColorPicker">https://github.com/LarsWerkman/HoloColorPicker</a>
+        </p>
+
+        <p>
+        This demo application was hacked together by <a href="https://github.com/cketti">cketti</a>.
+        The source code can be found here:<br>
+        <a href="https://github.com/cketti/HoloColorPicker_demo">https://github.com/cketti/HoloColorPicker_demo</a>
+        </p>
+
+        <p>
+        <em>
+        Please note that this demo currently highlights some bugs in the library. If you find one
+        please take a moment to fix it, then open a
+        <a href="https://help.github.com/articles/using-pull-requests">pull request</a>.
+        </em>
+        </p>
+    ]]></string>
+</resources>
