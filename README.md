@@ -3,7 +3,7 @@ HoloColorPicker demo
 
 Small application that demonstrates the capabilities of the [HoloColorPicker][1] library.
 
-The APK is available here: [HoloColorPicker_demo_0.1.apk][2]
+The APK is available here: [HoloColorPicker_demo_1.1.apk][2]
 
 
 
@@ -42,4 +42,4 @@ License
 
 
  [1]: https://github.com/LarsWerkman/HoloColorPicker
- [2]: http://cketti.github.com/HoloColorPicker_demo/bin/HoloColorPicker_demo_0.1.apk
+ [2]: http://cketti.github.com/HoloColorPicker_demo/bin/HoloColorPicker_demo_1.1.apk
