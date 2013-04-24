@@ -32,6 +32,12 @@
         </p>
 
         <p>
+        This app uses <a href="https://github.com/JakeWharton/ActionBarSherlock">ActionBarSherlock</a>
+        (licensed under the Apache License 2.0) by
+        <a href="https://plus.google.com/108284392618554783657/posts">Jake Wharton</a>.
+        </p>
+
+        <p>
         <em>
         Please note that this demo currently highlights some bugs in the library. If you find one
         please take a moment to fix it, then open a
