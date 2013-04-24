@@ -2,13 +2,14 @@ package de.cketti.holocolorpicker.demo;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.AlertDialog.Builder;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 
@@ -18,18 +19,18 @@ import android.widget.TextView;
 public class AboutDialogFragment extends SherlockDialogFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle(R.string.label_about);
+        builder.setPositiveButton(android.R.string.ok, null);
 
-        View view = inflater.inflate(R.layout.about_dialog, null);
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.about_dialog, null);
 
         TextView about = (TextView) view.findViewById(R.id.about_text);
         about.setText(Html.fromHtml(getString(R.string.about_text)));
         about.setMovementMethod(LinkMovementMethod.getInstance());
 
-        Dialog dialog = getDialog();
-        dialog.setTitle(R.string.label_about);
-
-        return view;
+        builder.setView(view);
+        return builder.create();
     }
 }
